@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.php",
+      "use": "@vercel/php"
+    },
+    {
+      "src": "*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "playlist.m3u",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/login", "dest": "/login.php" },
+    { "src": "/live", "dest": "/live.php" },
+    { "src": "/config", "dest": "/config.php" },
+    { "src": "/admin", "dest": "/admin.php" },
+    { "src": "/web", "dest": "/web.php" },
+    { "src": "/playlist", "dest": "/playlist.php" },
+    { "src": "/play", "dest": "/play.php" },
+    { "src": "/style.css", "dest": "/style.css" },
+    { "src": "/playlist.m3u", "dest": "/playlist.m3u" },
+    { "src": "/", "dest": "/index.php" }
+  ]
+}
